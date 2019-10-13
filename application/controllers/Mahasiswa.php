@@ -31,7 +31,8 @@ class Mahasiswa extends CI_Controller {
             $this->load->view('mahasiswa/tambah');
             $this->load->view('templates/footer');
         } else {
-
+            $this->Mahasiswa_model->tambahDataMahasiswa();
+            redirect('mahasiswa');
         }
     }
 }
