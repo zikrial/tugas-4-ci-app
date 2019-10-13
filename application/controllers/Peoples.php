@@ -18,8 +18,10 @@ class Peoples extends CI_Controller {
         }
         
         $this->db->like('name', $data['keyword']);
+        $this->db->or_like('email', $data['keyword']);
         $this->db->from('peoples');
         $config['total_rows'] = $this->db->count_all_results();
+        $data['total_rows'] = $config['total_rows'];
         $config['per_page'] = 10;
 
         $this->pagination->initialize($config);
