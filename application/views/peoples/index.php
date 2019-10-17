@@ -42,7 +42,7 @@
                             <td><?= $p['name']; ?></td>
                             <td><?= $p['email']; ?></td>
                             <td>
-                                <a href="" class="badge badge-warning">detail</a>
+                                <a href="" class="badge badge-primary">detail</a>
                                 <a href="" class="badge badge-success">edit</a>
                                 <a href="" class="badge badge-danger">delete</a>
                             </td>
